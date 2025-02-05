@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "About Me";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+        <div class="flex items-start gap-8 font-tt ">
+          <div class="flex-1 mt-10">
+            <h2 class="font-bold">Welcome to my corner of the web!</h2>
+            <p>Hi there! I'm delighted you've found your way here.
+              This blog is a place where I dump my thoughts and reflections and try to keep me in the habit of writing.
+            </p>
+            <p>I am generally interested in various topic, ranging from technological developments to the philosophy or the economic structure of society.
+            Furthermore, I am living in the "start-up world" and love to create beautiful new products. Hence I might slip some management related posts here and there.
+            </p>
+            <p>As I am aware that these topics are quite unrelated, I give you filter to not be bothered.</p>
+            <p>I hope you find something interesting here.</p>
+            <p>If you have any questions, remarks or just want to say hi, please feel free to contact me via <wired-link href="mailto:blog@erik-schwan.com">email</wired-link>.
+            </p>
+          </div>
+          <div class="flex-none">
+            <img 
+              src="/profile.jpg" 
+              alt="Profile photo" 
+              class="rounded-lg shadow-xl w-64 transform rotate-3 hover:rotate-0 transition-transform duration-300" 
+            />
+          </div>
+        </div>
+</BaseLayout>

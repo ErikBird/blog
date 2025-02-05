@@ -1,0 +1,60 @@
+---
+interface Props {
+    post: any;
+}
+
+const { post } = Astro.props;
+---
+
+<a href={post.url} class="block">
+    <wired-card elevation="2" class={`w-full group`} onmouseover="this.elevation=4" onmouseout="this.elevation=2">
+        {post.frontmatter.compact ? (
+            <div class="p-4">
+                <div class="flex items-center gap-4 mb-2">
+                    <span class="text-xl hover:text-blue-600 font-tt">{post.frontmatter.title}</span>
+                    {post.frontmatter.pubDate && (
+                        <p class="font-tt text-sm text-gray-500">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</p>
+                    )}
+                    {post.frontmatter.tags && (
+                        <div class="flex flex-wrap gap-1">
+                            {post.frontmatter.tags.map((tag: string) => (
+                                <span class="text-xs text-gray-500 font-tt">#{tag}</span>
+                            ))}
+                        </div>
+                    )}
+                </div>
+                <div class="font-tt text-gray-600" set:html={post.compiledContent()}>
+                </div>
+            </div>
+        ) : (
+            <div class="flex justify-between">
+                <div class="m-2">
+                    {post.frontmatter.pubDate && (
+                        <p class="mt-2 font-tt text-sm text-gray-500">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</p>
+                    )}
+                    <span class="text-xl hover:text-blue-600 font-tt">{post.frontmatter.title}</span>
+                </div>
+                <div class="m-2">
+                    {post.frontmatter.description && (
+                        <p class="mt-2 text-gray-600 font-tt typewriter w-96">
+                            <span class="typing">{post.frontmatter.description}</span>
+                        </p>
+                    )}
+                    {post.frontmatter.tags && (
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            {post.frontmatter.tags.map((tag: string) => (
+                                <span class="text-xs text-gray-500 font-tt">#{tag}</span>
+                            ))}
+                        </div>
+                    )}
+                </div>
+                <div class="w-60 flex-shrink-0 flex items-center justify-center">
+                    {post.frontmatter.image && (
+                        <img src={post.frontmatter.image.url} alt={post.frontmatter.title} 
+                        class="w-full h-48 object-cover mb-4 rounded blur-xs grayscale hover:blur-none hover:grayscale-0 transition-all origin-bottom -rotate-2 brightness-125 hover:brightness-100" />
+                    )}
+                </div>
+            </div>
+        )}
+    </wired-card>
+</a>

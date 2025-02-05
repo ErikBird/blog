@@ -1,0 +1,60 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+const { pageTitle } = Astro.props;
+const { category = 'all' } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <script>
+        import 'wired-elements';
+    </script>
+  <body>
+    <div class="grid-background border-b border-blue-800/35">
+        <Header />
+        <h1 class="text-center text-xl font-playwriteGuides py-4">{pageTitle}</h1>
+        <div class="flex justify-center gap-4 pb-4 mt-10">
+            <wired-radio name="filter" checked={category === 'all'} onclick="window.location.href='/'">
+                <span class="font-tt">All</span>
+            </wired-radio>
+            <wired-radio name="filter" checked={category === 'philosophy'} onclick="window.location.href='/categories/philosophy'">
+                <span class="font-tt">Philosophy</span>
+            </wired-radio>
+            <wired-radio name="filter" checked={category === 'technology'} onclick="window.location.href='/categories/technology'">
+                <span class="font-tt">Technology</span>
+            </wired-radio>
+            <wired-radio name="filter" checked={category === 'economics'} onclick="window.location.href='/categories/economics'">
+                <span class="font-tt">Economics</span>
+            </wired-radio>
+        </div>
+    </div>
+    <div class="max-w-screen-xl mx-auto grid grid-cols-[1fr_300px] gap-8 min-h-[calc(100vh-285px)]">
+        <div>
+            <slot />
+        </div>
+        <div class="mt-16">
+            <h2 class="text-xl font-tt mb-4">Tags</h2>
+            <div class="flex flex-wrap gap-2">
+                {[...new Set(Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }))
+                    .filter((post: any) => category === 'all' || post.frontmatter.category === category)
+                    .map((post: any) => post.frontmatter.tags)
+                    .flat())]
+                    .map(tag => (
+                        <wired-card elevation="1" class="p-2">
+                            <a href={`/tags/${tag}`} class="font-tt">{tag}</a>
+                        </wired-card>
+                    ))}
+            </div>
+        </div>
+    </div>
+    <div class="grid-background h-16 border-t border-blue-800/35">
+        <Footer />
+    </div>
+  </body>
+</html>

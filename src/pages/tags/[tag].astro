@@ -1,0 +1,39 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+export async function getStaticPaths() {
+  const allPosts = Object.values(import.meta.glob('../posts/*.md', { eager: true }));
+
+  // Filter out posts without tags and get unique tags
+  const uniqueTags = [...new Set(allPosts
+    .filter((post: any) => post.frontmatter.tags)
+    .map((post: any) => post.frontmatter.tags)
+    .flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) => 
+      post.frontmatter.tags && post.frontmatter.tags.includes(tag)
+    );
+    
+    console.log(`Tag: ${tag}, Posts:`, filteredPosts); // Debug logging
+    
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+console.log(`Rendering tag page for: ${tag}, Number of posts:`, posts.length); // Debug logging
+---
+<BlogLayout pageTitle={tag} category="all">
+  <div class="flex flex-col gap-6 my-16">
+    {posts.map((post: any) => (
+      <PostCard post={post} detailed={true} />
+    ))}
+  </div>
+</BlogLayout>

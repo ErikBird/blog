@@ -1,0 +1,11 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+---
+<div class="flex justify-center gap-4 text-xl font-tt">
+    <a href="/" class="nav-link">
+        <wired-link href="/" elevation={pathname === "/" ? "3" : "0"}>Blog</wired-link>
+    </a>
+    <a href="/about" class="nav-link">
+        <wired-link href="/about" elevation={pathname === "/about" ? "3" : "0"}>About</wired-link>
+    </a>
+</div>

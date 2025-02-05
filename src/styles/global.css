@@ -1,0 +1,80 @@
+.grid-background {
+    background-size: 14px 14px;
+    background-image: linear-gradient(to right, rgb(243, 244, 246) 1px, transparent 1px), linear-gradient(rgb(243, 244, 246) 1px, transparent 1px);
+    background-color: rgb(252, 248, 242); /* Light sepia tone */
+}
+
+body {
+    background-color: rgb(252, 248, 242); /* Light sepia tone */
+}
+
+@font-face {
+    font-family: "PlaywriteCU";
+    src: url("/src/assets/Playwrite_CU/static/PlaywriteCU-ExtraLight.ttf");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "PlaywriteCU";
+    src: url("/src/assets/Playwrite_CU/static/PlaywriteCU-Thin.ttf");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "PlaywriteCU";
+    src: url("/src/assets/Playwrite_CU/static/PlaywriteCU-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "PlaywriteCU";
+    src: url("/src/assets/Playwrite_CU/static/PlaywriteCU-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "PlaywriteCUGuides";
+    src: url("/src/assets/Playwrite_CU_Guides/PlaywriteCUGuides-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "TT2020Base";
+    src: url("/src/assets/TT2020/TT2020Base-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Markdown Content Styling */
+.markdown-content {
+  font-family: "TT2020Base", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  font-family: "PlaywriteCU", system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+
+.markdown-content ol li {
+  margin-bottom: 0.5em;
+}

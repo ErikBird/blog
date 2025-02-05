@@ -1,0 +1,18 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle={frontmatter.title}>
+  <p class="flex flex-col items-center mt-10">
+    <div class="text-center font-tt text-sm font-thin">{frontmatter.pubDate.toString().slice(0,10)}</div>
+    <em class="font-tt text-lg text-center max-w-screen-sm mx-auto mt-4">{frontmatter.description}</em>
+    <!--div class="flex flex-wrap justify-center gap-2 mt-4">
+      {frontmatter.tags.map((tag: string) => (
+        <a class="nav-link text-sm font-tt font-thin" href={`/tags/${tag}`}><wired-link href={`/tags/${tag}`}>#{tag}</wired-link></a>
+      ))}
+    </div-->
+  </p>
+  <div class="markdown-content my-10">
+    <slot />
+  </div>
+</BaseLayout>

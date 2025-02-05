@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Privacy Policy";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <div class="prose mx-auto p-8">
+    <h2 class="font-tt text-xl mb-4">Privacy Policy</h2>
+
+    <p class="mb-4">Last updated: {new Date().toISOString().split('T')[0]}</p>
+
+    <h3 class="font-tt text-lg mb-2">Overview</h3>
+    <p class="mb-4">
+      This privacy policy explains how we handle your personal data when you visit our website. We are committed to protecting your privacy and being transparent about our practices.
+    </p>
+
+    <h3 class="font-tt text-lg mb-2">Data Collection</h3>
+    <p class="mb-4">
+      We do not collect, store, or process any personal data from visitors to this website. We do not use cookies, analytics tools, or any other tracking mechanisms.
+    </p>
+
+    <h3 class="font-tt text-lg mb-2">Third-Party Services</h3>
+    <p class="mb-4">
+      This website is hosted on servers that may automatically log basic technical information (such as IP addresses) as part of their standard operation. This information is not used by us for any purpose and is automatically deleted according to the hosting provider's retention policies.
+    </p>
+
+    <h3 class="font-tt text-lg mb-2">Your Rights Under GDPR</h3>
+    <p class="mb-4">
+      Under the General Data Protection Regulation (GDPR), you have various rights regarding your personal data. However, since we do not collect any personal data, these rights are not applicable in the context of this website.
+    </p>
+
+    <h3 class="font-tt text-lg mb-2">Contact</h3>
+    <p class="mb-4">
+      If you have any questions about this privacy policy, please contact us through the available contact methods on our website.
+    </p>
+
+    <h3 class="font-tt text-lg mb-2">Changes to This Policy</h3>
+    <p class="mb-4">
+      We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.
+    </p>
+  </div>
+</BaseLayout>
