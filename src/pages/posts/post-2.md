@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Physics vs Statistics vs Machine Learning'
+title: 'Physics vs Statistics vs Artificial Intelligence'
 pubDate: 2022-05-21
 description: ""
 author: 'Erik Schwan'
-tags: ["AI", "physics", "statistics", "machine learning"]
+tags: ["AI", "physics", "statistics", "artificial intelligence"]
 category: "technology"
 compact: true
 ---
