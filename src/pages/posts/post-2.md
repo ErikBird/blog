@@ -8,19 +8,12 @@ tags: ["AI", "physics", "statistics", "artificial intelligence"]
 category: "technology"
 compact: true
 ---
-In traditional sciences, researchers try to apply laws discovered in celestial physics to other fields. This is convenient because these laws are comprehensible, predictable, and verifiable. However, the world is complex, and we always lack measurements of some influencing factors, meaning the mathematics almost never matches exactly.
+The relationship between traditional sciences and modern artificial intelligence represents two distinct approaches to understanding our world. In traditional sciences, researchers have long attempted to apply the laws of celestial physics to other fields, attracted by their comprehensible, predictable, and verifiable nature. However, the world's complexity and our inability to measure all influencing factors means these mathematical models rarely achieve perfect accuracy.
 
-Therefore, by aggregating these events, we attempt to make meaningful observations from a broader perspective. This is called statistics, which remains predictable and verifiable but is often counterintuitive. It's important to note that this mathematical approach stems from trying to explain the world – statistics is the realization that we cannot achieve this at an atomic level for many real-world problems.
+This limitation led to the development of statistics, which attempts to derive meaningful insights by aggregating multiple events. While statistical approaches remain predictable and verifiable, they can often seem counterintuitive. Statistics emerged from our recognition that analyzing many real-world problems at an atomic level simply isn't feasible.
 
-Neural computations approach this from the opposite direction. Scientists observed that the brain is quite capable of making decisions at an atomic level in a complex world.
-By remaining the atomic view, they aggregate impressions of patterns that occur to them and optimize their internal models for any inference they might make.
-Instead of acting as architects and try to understand the world, they now only try to replicate the consequences of the world that is projected onto them as atoms.
-This approach is quite successful and at the same time radically different from traditional sciences.
-It optimizes from the bottom up, it optimizes the atomic view.
+Neural computation takes a fundamentally different approach. Scientists observed that the brain excels at making decisions at an atomic level, even in highly complex environments. Rather than trying to understand the world through high-level mathematical models, neural networks learn by aggregating patterns from countless individual observations, continuously optimizing their internal models based on the data they encounter. Instead of acting as architects trying to decode the universe, they simply aim to replicate the observable consequences of the world at an atomic level.
 
-Furthermore, this approach enables to aggregate various "atomic simulations" and by this enables to approximate the world in some fields better than the traditional sciences ever had.
+This bottom-up approach has proven remarkably successful, often outperforming traditional scientific methods in certain domains by combining numerous "atomic simulations" to approximate real-world phenomena. However, this paradigm shift has created challenges for those deeply rooted in traditional scientific thinking, as it requires embracing a fundamentally different philosophical approach.
 
-In my personal opinion, I have the impression that people who are deeply shaped by the traditional sciences currently have a quite hard time to adapt the new philosophy.
-Finally, we will probably see a convergence of both approaches in the future.
-Pattern, that have been found useful by the worldview of the traditional sciences will become more and more integrated into the atomic view of artificial intelligence and vice versa.
-And it will be great!
+Looking forward, we're likely to see these two approaches converge. Patterns and insights discovered through traditional scientific methods will increasingly inform and enhance artificial intelligence's atomic-level understanding, while AI's bottom-up discoveries will influence traditional scientific thinking. This synthesis of approaches promises to advance our understanding of the world in exciting new ways.
