@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'The AI/Logic Sandwich: Navigating Optimization in Software Design'
+title: 'The AI/Logic Sandwich'
 pubDate: 2025-03-27
 description: "Exploring the intersection of AI, logic, and software design, this blog post examines how explicit knowledge and structured approaches can be leveraged in the AI revolution."
 author: 'Erik Schwan'
