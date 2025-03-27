@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'The AI/Logic Sandwich: Navigating Optimization in Software Design'
 pubDate: 2025-03-27
-description: "Exploring the intersection of AI, logic, and software design, this blog post examines how explicit knowledge and structured approaches can drive innovation in the AI revolution. By drawing parallels between natural optimization and software development, the author reveals insights into creating more effective technological solutions."
+description: "Exploring the intersection of AI, logic, and software design, this blog post examines how explicit knowledge and structured approaches can be leveraged in the AI revolution."
 author: 'Erik Schwan'
 image:
     url: '/images/posts/logic-ai-sandwich.webp'
