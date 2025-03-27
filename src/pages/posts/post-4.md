@@ -6,7 +6,7 @@ description: "Exploring the intersection of AI, logic, and software design, this
 author: 'Erik Schwan'
 image:
     url: '/images/posts/logic-ai-sandwich.webp'
-    alt: 'The AI/Logic Sandwich: Navigating Optimization in Software Design'
+    alt: 'The AI/Logic Sandwich'
 tags: ["software design", "AI", "logic", "optimization"]
 category: "software development"
 ---
