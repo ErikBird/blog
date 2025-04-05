@@ -9,17 +9,18 @@ const { category = 'all' } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <script>
         import 'wired-elements';
     </script>
+  </head>
   <body>
     <div class="grid-background border-b border-blue-800/35">
         <Header />
-        <h1 class="text-center text-xl font-playwriteGuides py-4">{pageTitle}</h1>
-        <div class="flex justify-center gap-4 pb-4 mt-10">
+        <h1 class="text-center text-xl font-playwriteGuides py-4 px-4">{pageTitle}</h1>
+        <div class="flex flex-wrap justify-center gap-4 pb-4 mt-10 px-4">
             <wired-radio name="filter" checked={category === 'all'} onclick="window.location.href='/'">
                 <span class="font-tt">All</span>
             </wired-radio>
@@ -34,22 +35,24 @@ const { category = 'all' } = Astro.props;
             </wired-radio>
         </div>
     </div>
-    <div class="max-w-screen-xl mx-auto grid grid-cols-[1fr_300px] gap-8 min-h-[calc(100vh-285px)]">
-        <div>
-            <slot />
-        </div>
-        <div class="mt-16">
-            <h2 class="text-xl font-tt mb-4">Tags</h2>
-            <div class="flex flex-wrap gap-2">
-                {[...new Set(Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }))
-                    .filter((post: any) => category === 'all' || post.frontmatter.category === category)
-                    .map((post: any) => post.frontmatter.tags)
-                    .flat())]
-                    .map(tag => (
-                        <wired-card elevation="1" class="p-2">
-                            <a href={`/tags/${tag}`} class="font-tt">{tag}</a>
-                        </wired-card>
-                    ))}
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8 min-h-[calc(100vh-285px)]">
+            <div>
+                <slot />
+            </div>
+            <div class="mt-8 lg:mt-16 mb-8 lg:mb-0">
+                <h2 class="text-xl font-tt mb-4">Tags</h2>
+                <div class="flex flex-wrap gap-2">
+                    {[...new Set(Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }))
+                        .filter((post: any) => category === 'all' || post.frontmatter.category === category)
+                        .map((post: any) => post.frontmatter.tags)
+                        .flat())]
+                        .map(tag => (
+                            <wired-card elevation="1" class="p-2">
+                                <a href={`/tags/${tag}`} class="font-tt">{tag}</a>
+                            </wired-card>
+                        ))}
+                </div>
             </div>
         </div>
     </div>
