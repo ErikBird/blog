@@ -52,9 +52,11 @@ Darwinian processes enable iterative strategy optimization, but with a crucial c
 
 Yet, some domains have already developed precise computational methods:
 
-- Geometric properties can be explicitly and optimally computed
+- Geometric properties can be explicitly and optimally computed. Symbolic knowledge is the purest form of knowledge compression.
 - Approximation approaches are inherently less efficient and more expensive
 - Expert industry knowledge provides near-optimal representations that can guide software creation
+
+
 
 ## The Future of Software Design
 
