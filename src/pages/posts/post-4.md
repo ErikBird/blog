@@ -8,7 +8,7 @@ image:
     url: '/images/posts/logic-ai-sandwich.webp'
     alt: 'The AI/Logic Sandwich'
 tags: ["software design", "AI", "logic", "optimization"]
-category: "software development"
+category: "technology"
 ---
 
 # The AI/Logic Sandwich: Navigating Optimization in Software Design
