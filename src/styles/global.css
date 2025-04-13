@@ -71,12 +71,66 @@ body {
   font-size: 1.1em;
 }
 
+/* Ordered Lists */
 .markdown-content ol {
   list-style-type: decimal;
   margin-left: 1.5em;
   padding-left: 1em;
+  margin-top: 1em;
 }
 
 .markdown-content ol li {
   margin-bottom: 0.5em;
+}
+
+/* Unordered Lists */
+.markdown-content ul {
+  list-style-type: none;
+  margin-left: 1.5em;
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+.markdown-content ul li {
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+/* Nested Lists */
+.markdown-content ul ul,
+.markdown-content ol ol,
+.markdown-content ul ol,
+.markdown-content ol ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* List Items with Custom Bullets */
+.markdown-content ul li::before {
+  content: "•";
+  color: #4a5568;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Definition Lists */
+.markdown-content dl {
+  margin: 1em 0;
+}
+
+.markdown-content dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.markdown-content dd {
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Task Lists */
+.markdown-content ul li input[type="checkbox"] {
+  margin-right: 0.5em;
 }
