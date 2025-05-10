@@ -12,7 +12,7 @@ category: "technology"
 ---
 
 # The Rise of Taste: Why Design Will Outperform Compute in the AI Era
-In my previous blog post, I emphasized the importance of developing a polymath skill-set in our AI-assisted world. However, after reflecting on this while listening to Jony Ive's insights, I've realized that not all skills will carry equal weight across different fields in our future.
+In my previous blog post, I emphasized the importance of developing a polymath skill-set in our AI-assisted world. However, after reflecting on this while [listening to Jony Ive's insights](https://www.youtube.com/watch?v=wLb9g_8r-mE), I've realized that not all skills will carry equal weight across different fields in our future.
 
 ## The Changing Nature of Structural Disciplines
 My expertise lies in software development and management—both structural disciplines that don't have inherent value but serve external goals. Great software and management make achieving these external goals more effective and efficient. In many ways, software functions as a tool of management, with managers deeply invested in how digital systems can represent their desired structures and align with company vision.
