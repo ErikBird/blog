@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Cost Saving with AI: A Temporary Fix'
 pubDate: 2025-05-14
-description: "Exploring why AI implementations focused solely on cost-cutting provide only temporary advantages, while innovation-focused strategies create lasting value."
+description: ""
 author: 'Erik Schwan'
 tags: ["AI", "business strategy", "innovation", "technology adoption"]
 category: "economics"
@@ -22,7 +22,7 @@ When your company implements AI solely to reduce costs, any competitive advantag
 2. Benefit from rapidly falling computation costs (thanks to Moore's Law)
 3. Eventually achieve the same cost savings with less investment
 
-This phenomenon was explored in the 1999 paper "The Effect of Moore's Law and Slacking," which demonstrated how technology laggards can ultimately benefit from delayed adoption when technology costs are continuously falling.
+This phenomenon was explored in the 1999 paper ["The Effects of Moore's Law and Slacking on Large Computations"](https://arxiv.org/abs/astro-ph/9912202), which demonstrated how technology laggards can ultimately benefit from delayed adoption when technology costs are continuously falling.
 
 ## A Better Approach: Product and Service Innovation
 
