@@ -15,6 +15,16 @@ const stainSvgs = [
   '/images/bg/coffee-stain-6.svg',
 ];
 
+// Ink SVGs
+const inkSvgs = [
+  '/images/ink/303394.svg',
+  '/images/ink/2174689.svg',
+  '/images/ink/2174688.svg',
+  '/images/ink/2174687.svg',
+  '/images/ink/2209585.svg',
+  '/images/ink/2174686.svg',
+];
+
 function getRandomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -36,7 +46,25 @@ function getRandomStains() {
     };
   });
 }
+
+function getRandomInks() {
+  const count = getRandomInt(3, 5);
+  const shuffled = inkSvgs.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count).map((src, i) => {
+    // Distribute stains over a larger vertical range (up to 200vh)
+    const top = getRandomInt(5, 200);
+    const left = getRandomInt(5, 80);
+    const rotate = getRandomInt(0, 360);
+    const opacity = Math.random() * 0.18 + 0.10;
+    const size = getRandomInt(180, 340);
+    return {
+      src,
+      style: `position:absolute;z-index:0;top:${top}vh;left:${left}vw;transform:rotate(${rotate}deg);opacity:${opacity};width:${size}px;pointer-events:none;user-select:none;`,
+    };
+  });
+}
 const stains = getRandomStains();
+const inks = getRandomInks();
 ---
 <html lang="en">
   <head>
@@ -53,6 +81,9 @@ const stains = getRandomStains();
     <div style="position:absolute;inset:0;pointer-events:none;z-index:0;width:100vw;height:100vh;overflow:hidden;">
       {stains.map(stain => (
         <img src={stain.src} alt="coffee stain" style={stain.style} loading="lazy" />
+      ))}
+      {inks.map(ink => (
+        <img src={ink.src} alt="ink stain" style={ink.style} loading="lazy" />
       ))}
     </div>
     <div class="grid-background border-b border-blue-800/35" style="position:relative;z-index:1;">
