@@ -23,7 +23,7 @@ const { post } = Astro.props;
                         </div>
                     )}
                 </div>
-                <div class="font-tt text-gray-600" set:html={post.compiledContent()}>
+                <div class="markdown-content font-tt text-gray-600" set:html={post.compiledContent()}>
                 </div>
             </div>
         ) : (

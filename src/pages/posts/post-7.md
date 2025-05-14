@@ -2,11 +2,13 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Cost Saving with AI: A Temporary Fix'
 pubDate: 2025-05-14
-description: ""
+description: "Exploring why AI implementations focused solely on cost-cutting provide only temporary advantages, while innovation-focused strategies create lasting value."
 author: 'Erik Schwan'
+image:
+    url: '/images/posts/ai-cost-saving.png'
+    alt: 'AI Cost Saving Strategy'
 tags: ["AI", "business strategy", "innovation", "technology adoption"]
 category: "economics"
-compact: true
 ---
 # Cost Saving with AI: A Temporary Fix
 
