@@ -6,24 +6,22 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<a href={post.url} class="block">
+<a href={post.url} class="flex justify-center">
     <wired-card elevation="2" class={`w-full group`} onmouseover="this.elevation=4" onmouseout="this.elevation=2" class="bg-white">
         {post.frontmatter.compact ? (
             <div class="p-4">
-                <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-2">
-                    <span class="text-xl hover:text-blue-600 font-tt">{post.frontmatter.title}</span>
-                    {post.frontmatter.pubDate && (
-                        <p class="font-tt text-sm text-gray-500">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</p>
-                    )}
-                    {post.frontmatter.tags && (
-                        <div class="flex flex-wrap gap-1">
-                            {post.frontmatter.tags.map((tag: string) => (
-                                <span class="text-xs text-gray-500 font-tt">#{tag}</span>
-                            ))}
-                        </div>
-                    )}
-                </div>
-                <div class="markdown-content font-tt text-gray-600" set:html={post.compiledContent()}>
+                {post.frontmatter.pubDate && (
+                    <p class="font-tt text-sm text-gray-500">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</p>
+                )}
+                <div class="text-xl hover:text-blue-600 font-tt lg:w-96">{post.frontmatter.title}</div>
+                {post.frontmatter.tags && (
+                    <div class="flex flex-wrap gap-1">
+                        {post.frontmatter.tags.map((tag: string) => (
+                            <span class="text-xs text-gray-500 font-tt">#{tag}</span>
+                        ))}
+                    </div>
+                )}
+                <div class="markdown-content font-tt text-gray-600 lg:w-[610px]" set:html={post.compiledContent()}>
                 </div>
             </div>
         ) : (
@@ -32,7 +30,7 @@ const { post } = Astro.props;
                     {post.frontmatter.pubDate && (
                         <p class="mt-2 font-tt text-sm text-gray-500">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</p>
                     )}
-                    <span class="text-xl hover:text-blue-600 font-tt">{post.frontmatter.title}</span>
+                    <div class="text-xl hover:text-blue-600 font-tt lg:w-96">{post.frontmatter.title}</div>
                     {post.frontmatter.description && (
                         <p class="mt-2 text-gray-600 font-tt typewriter w-full lg:w-96">
                             <span class="typing">{post.frontmatter.description}</span>
