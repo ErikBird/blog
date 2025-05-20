@@ -60,7 +60,6 @@ body {
 .markdown-content h1,
 .markdown-content h2,
 .markdown-content h3,
-.markdown-content h4,
 .markdown-content h5,
 .markdown-content h6 {
   font-family: "TT2020Base", system-ui, -apple-system, sans-serif;
@@ -68,6 +67,14 @@ body {
   margin-top: 2em;
   margin-bottom: 0em;
   text-decoration: underline;
+  font-size: 1.1em;
+}
+
+.markdown-content h4 {
+  font-family: "TT2020Base", system-ui, -apple-system, sans-serif;
+  font-weight: 800;
+  margin-top: 2em;
+  margin-bottom: 0em;
   font-size: 1.1em;
 }
 
@@ -88,7 +95,7 @@ body {
   list-style-type: none;
   margin-left: 1.5em;
   padding-left: 1em;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .markdown-content ul li {
