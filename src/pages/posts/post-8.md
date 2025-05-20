@@ -89,7 +89,7 @@ Provide AI agents with clear process preferences about your expected working sty
 * Make documentation iteration/optimization part of your daily ritual
 * Experiment to determine what produces the best instruction-following from the model
 * Be specific in your instructions—take time to think through the problem and what the model needs to know
-* Course-correct early and often (as you would in an AI Agent IDE)
+* Course-correct early and often (but don't forget that this is what we want to avoid long-term)
 * Keep context focused
 * Use checklists and scratchpads for complex workflows
 * Leverage AI Agents for issue triage or generating Project Requirement Documents (PRDs)
