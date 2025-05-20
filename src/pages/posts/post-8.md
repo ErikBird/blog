@@ -10,42 +10,39 @@ image:
 tags: ["AI", "software development", "programming", "technology adoption"]
 category: "technology"
 ---
-# AI-Assisted Software Development: Adapting to the New Paradigm
+# AI Assisted Software Development: Adapting to the New Reality
 
-In the era of AI coding assistants like OpenAI Codex, Claude Code, and Cursor, software development is experiencing a transformative shift. This new layer of abstraction demands that we adapt our craftsmanship, rethink our priorities, and modify our workflow to remain effective.
+*This blog post draws inspiration from guidelines found in AI coding setups like OpenAI Codex, Claude Code, and Cursor, though with different naming conventions. Readers are encouraged to consult official documentation for their preferred technology.*
 
-## The New Development Landscape
+## A New Layer of Abstraction
 
-Think of AI assistants as a team of talented junior engineers at your disposal. With this resource available, your role evolves from pure coding to more strategic engineering. You become responsible for guiding these "juniors" to success, which requires a different approach to software development.
+AI-assisted coding represents a fundamental paradigm shift. As developers, we must adapt our craft accordingly, embracing new priorities and workflows.
 
-## Best Practices for AI-Assisted Development
+We now have access to an inexpensive crowd of talented junior engineers—AI agents—which means we should focus more on engineering and less on coding. We bear responsibility for helping these juniors succeed. This post outlines how to adapt your process to this new development landscape and "normalize" your repositories.
 
-### Technology Selection
+## Technology Selection Considerations
 
-AI coding assistants have clear preferences and strengths:
+These AI junior engineers are surprisingly conventional, preferring well-established concepts and programming languages. They excel with Python more than Ruby or Rust.
 
-- They excel with established programming languages (particularly Python) over newer alternatives like Rust
-- They perform better with strongly typed languages and strict linting preferences
-- They work best with conventional architectures for common applications (e.g., web apps)
+Working with strict linting preferences and type systems is highly beneficial. Fortunately, the software engineering landscape hasn't changed radically for popular applications like web apps. However, exercise extra caution when selecting a tech stack that incorporates cutting-edge technologies.
 
-**Tip:** Be cautious when choosing cutting-edge technologies, as AI assistants may provide less reliable support for them.
+## The New Definition of Technical Debt
 
-### Code Quality in the AI Era
+In this future, technical debt will manifest as incoherent projects. Code style should remain consistent throughout the repository and align with documentation. Architecture should follow uniform principles, as AIs benefit significantly from clean abstraction layers.
 
-The definition of technical debt is evolving. In the future, the greatest liability will be incoherent projects. To prevent this:
+Most importantly, document the structures that create coherence.
 
-- Maintain consistent code style throughout your repository
-- Align your code with its documentation
-- Design architecture with clear abstraction layers
-- Document the structural principles that create coherence
+## Repository Setup
 
-### Repository Organization
+Every project setup is inherently opinionated. In this new world, great software engineers should be acutely aware of their opinions.
 
-#### Documentation as the Foundation
+Consider generating a template project and collecting your wisdom/opinions throughout your career.
+
+## Documentation: The New Cornerstone
 
 Every repository needs a well-structured entry point document (typically in the root directory) that includes:
 
-#### Project Standards
+### Project Standards
 
 - Code style guidelines
 - Repository conventions (branch naming, merge vs. rebase preferences)
@@ -55,12 +52,12 @@ Every repository needs a well-structured entry point document (typically in the 
 - Commonly used commands
 - Project-specific quirks or warnings (like deprecated code styles)
 
-#### Repository Navigation
+### Repository Navigation
 
 - Clear explanation of the codebase structure
 - Key components and their relationships
 
-#### Monorepo Considerations
+### Monorepo Considerations
 
 For monorepos, implement a hierarchical documentation approach:
 
@@ -68,51 +65,39 @@ For monorepos, implement a hierarchical documentation approach:
 - Document cross-cutting concerns in the root or dedicated documentation area
 - Maintain up-to-date references between related components
 
-### Leveraging Your Tools
+## Maximize Model Context
 
-#### **Source Control as Documentation**
+Leverage Model Context Provision (MCP) integrations for each helpful technology to give the LLM proper context.
 
-Treat your git history as a valuable resource for AI assistants:
+## Git as a Historical Record
 
-- Write meaningful commit messages
-- Use tags effectively
-- Reference tickets in commits when possible
-- Include implementation details when relevant
+Since Git provides a text-based chronology of your repository, maintain a clean Git history with tags, meaningful commit descriptions, and ideally references to implemented tickets with excerpts. This approach greatly assists LLMs as they can seamlessly interpret this information.
 
-#### MCP Integration
+## Document Your Programming Routines
 
-Implement Model Context Provider integrations for technologies in your stack to give AI assistants better context.
+Document when to run tests after implementing a feature.
+Document running migration auto-generate scripts and reviewing them after database changes.
 
-#### **Document Your Workflows**
+Provide AI agents with clear process preferences about your expected working style, such as:
 
-Clarify your preferred development processes:
+* Write code, screenshot result, iterate
+* Write tests, commit; code, iterate, commit
+* Explore, plan, code, commit
 
-- When and how to run tests
-- Database migration procedures
-- Code review expectations
+## Developer's Daily Approach
 
-Be explicit about your working style preferences, such as:
-
-- "Write code, screenshot result, iterate"
-- "Write tests, commit; code, iterate, commit"
-- "Explore, plan, code, commit"
-
-## The Developer's Daily Routine
-
-To maximize the benefits of AI assistance:
-
-- Regularly refine your documentation practices
-- Be specific and thorough in your instructions to AI tools
-- Course-correct early and often when working with AI assistants
-- Keep context focused on the task at hand
-- Use checklists and scratchpads for complex workflows
-- Leverage AI for issue triage and requirement documentation (like PRDs and feature requests)
-- Use AI as a linting and code quality tool
+* Make documentation iteration/optimization part of your daily ritual
+* Experiment to determine what produces the best instruction-following from the model
+* Be specific in your instructions—take time to think through the problem and what the model needs to know
+* Course-correct early and often (as you would in an AI Agent IDE)
+* Keep context focused
+* Use checklists and scratchpads for complex workflows
+* Leverage AI Agents for issue triage or generating Project Requirement Documents (PRDs)
+* Use AI Agents as linters
 
 ## The Path to Meta-Programming
 
-As we improve our ability to direct AI assistants, we're moving toward a new paradigm where architecture and common problems can be addressed through high-level specifications rather than manual implementation.
+Improving our ability to control AI Agents will lead us toward clearly defining how we want architectures modeled.
 
-In this future, standard components (databases, vector search, settings management, CQRS/event storage, APIs, frontends, user/application logic) will be implemented according to team preferences through strategic direction rather than line-by-line coding.
-
+This will create a state where common problems and paradigms are easily implemented with our preferred tools: databases, vector search, settings, CQRS/event stores, APIs, frontends, and user/app logic.
 The developer of tomorrow will be less a coder and more an architect, guiding AI to implement their vision efficiently and cohesively.
