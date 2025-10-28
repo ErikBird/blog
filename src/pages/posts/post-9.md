@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Three Fundamental Rules About the Future of AI'
-pubDate: 2022-10-28
+title: "Three Fundamental Rules About the Future of AI"
+pubDate: 2025-10-28
 description: "How public information becomes a commodity, why AI can only solve verifiable tasks, and which domains will be penetrated by intelligent systems first."
-author: 'Erik Schwan'
-tags: ["AI", "artificial intelligence", "future of work", "automation", "machine learning"]
+author: "Erik Schwan"
+tags: ["AI", "artificial intelligence", "future of work"]
 category: "technology"
 compact: true
 ---
