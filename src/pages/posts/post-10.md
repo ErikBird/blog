@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Excel and LLMs: Lessons from Malleable Software"
-pubDate: 2024-11-16
+pubDate: 2025-11-16
 description: "Why it's okay for customizable software to be a little bit shitty, and how we need to enable the everyday nerd in the age of AI-powered tools."
 author: "Erik Schwan"
 tags: ["AI", "malleable software", "Excel", "LLMs", "future of work"]
